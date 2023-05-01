@@ -14,6 +14,8 @@ findMin(3,1) // 1
 const findMin = (...args) => Math.min(...args)
 
 mergeObjects({a:1, b:2}, {c:3, d:4}) // {a:1, b:2, c:3, d:4}
+// Solution:
+const mergeObjects = (obj1, obj2) => ({...obj1, ...obj2})
 
 doubleAndReturnArgs([1,2,3],4,4) // [1,2,3,8,8]
 doubleAndReturnArgs([2],10,4) // [2, 20, 8]
