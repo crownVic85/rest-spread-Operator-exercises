@@ -25,9 +25,11 @@ const doubleAndReturnArgs = (arr, ...args) => [...arr, ...args.map(v => v *2)]
 /** remove a random element in the items array
 and return a new array without that item. */
 
-function removeRandom(items) {
+const removeRandom = items => {
+    let idx = Math.floor(Math.random() * items.length);
+    return [...items.slice(0, idx), ...items.slice(idx + 1)];
+  }
 
-}
 
 /** Return a new array with every item in array1 and array2. */
 
