@@ -5,12 +5,13 @@ function filterOutOdds() {
     });
   }
 /* Write an ES2015 Version */
-
 const filterOutOdds = (...args) => args.filter(v => v % 2 === 0)
 
 findMin(1,4,12,-3) // -3
 findMin(1,-1) // -1
 findMin(3,1) // 1
+// Solution:
+const findMin = (...args) => Math.min(...args)
 
 mergeObjects({a:1, b:2}, {c:3, d:4}) // {a:1, b:2, c:3, d:4}
 
